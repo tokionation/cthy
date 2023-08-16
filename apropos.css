@@ -1,0 +1,148 @@
+/* Réinitialisation des styles par défaut */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* Styles pour le logo */
+.logo {
+    display: inline-block;
+    padding: 2px;
+    margin-top: -60px;
+}
+
+.logo img {
+    max-width: 250px; /* Ajustez la taille du logo selon vos besoins */
+    height: auto;
+}
+
+/* Autres styles de navigation */
+/* ... */
+
+
+/* CSS pour l'onglet de navigation */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+/* Effet de survol */
+nav ul li a:hover {
+    background-color: #ffcc00;
+}
+
+/* Effet de transition au chargement de la page */
+nav ul li a {
+    transition: transform 0.5s ease;
+}
+
+/* Effet de rotation au survol */
+nav ul li a:hover {
+    transform: rotate(360deg);
+}
+li::marker {
+    content: '';
+    font-size: 1.5em;
+
+}
+
+/* Effet de pulsation */
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+nav ul li a.pulsate:hover {
+    animation: pulsate 1s infinite;
+}
+
+/* Effet de rebond */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+nav ul li a.bounce:hover {
+    animation: bounce 0.5s;
+}
+
+section {
+    margin: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    padding: 5px;
+    text-align: center;
+    font-size:large;
+    text-shadow:0 0 2px #e4e000,0 0 30px #c5ff83,0px 0px 5px #e6ff5b, 0 0 150px #ffef0a;color:#a39a17;
+}
+div {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000; /* Couleur noir vive, vous pouvez ajuster selon vos préférences */
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+footer {
+
+    text-align: center;
+    padding: 20rem 0;
+    color: #000000;
+}
