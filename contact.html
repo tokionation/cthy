@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="contact.css">
+    <title>Sama Bijoux</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="logothyc.jpg" alt="Logo La Fina Joallier">
+            <nav>
+                <ul>
+                    <li><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                      <path d="M8 3.293l5.146 5.147a.5.5 0 0 1-.708.708L8 4.707 1.854 10.854a.5.5 0 1 1-.708-.708L8 3.293z"/>
+                      <path fill-rule="evenodd" d="M7.293 1.146a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 .263 1.102l-.758 3.788a2 2 0 0 1-2.464 1.473l-3.746-.936a.5.5 0 0 0-.316 0l-3.746.936A2 2 0 0 1 .495 12.036L-.263 8.248a1 1 0 0 1 .263-1.102l6-6zm-.35.35a2 2 0 0 1 2.101 0l6 4a2 2 0 0 1 .799 2.201l-.475 2.375a1 1 0 0 1-.292.438l-3.746.936a.5.5 0 0 0-.316 0l-3.746-.936a1 1 0 0 1-.292-.438l-.475-2.375a2 2 0 0 1 .8-2.2l6-4a2 2 0 0 1 2.1 0l-.698 3.49a1 1 0 0 1-.987.822l-3.746-.936a.5.5 0 0 0-.316 0l-3.746.936a1 1 0 0 1-.987-.822L1.943 4.496z"/>
+                    </svg> Accueil</a></li>
+                                <li><a href="produit.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+                      <path d="M4.993 1.462a1 1 0 0 1 .997 0l5 3a1 1 0 0 1 .434 1.356l-2.5 7a1 1 0 0 1-1.87 0l-2.5-7a1 1 0 0 1 .434-1.356l5-3zm-2.5 3.328a1 1 0 0 1 .67-.223l6-1a1 1 0 0 1 .663.223l2.5 2.063a1 1 0 0 1 .285 1.243l-1.5 5a1 1 0 0 1-1.544.573l-3.5-2.625a1 1 0 0 0-1.221 0L4.193 13.13a1 1 0 0 1-1.545-.573l-1.5-5a1 1 0 0 1 .286-1.243l2.5-2.063z"/>
+                    </svg> Produit</a></li>
+                                <li><a href="apropos.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                      <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm0-8a1 1 0 0 1 1 1v4a1 1 0 0 1-2 0V5a1 1 0 0 1 1-1z"/>
+                    </svg> À propos</a></li>
+                                <li><a href="contact.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                      <path d="M.5 1A1.5 1.5 0 0 1 2 .5h12A1.5 1.5 0 0 1 15.5 1v14a1.5 1.5 0 0 1-1.5 1.5H2A1.5 1.5 0 0 1 .5 15V1zM2 2v12l5 3 5-3V2L7 5 2 2z"/>
+                    </svg> Contact</a></li>
+                                <li><a href="panier.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                      <path d="M0 0a1 1 0 0 1 1-1h1.117l1.56 4.68a.5.5 0 0 0 .948.004L7.64 0H9a1 1 0 0 1 0 2H7.358l-.295.884 7.295 5.477A1 1 0 0 1 15 9h-1V7a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v2a2 2 0 0 1-1.561 1.961l-10 2A1 1 0 0 1 4 13V4H2a1 1 0 0 1-1-1zm2.879 4H13.12L9.56 10.68a.5.5 0 1 1-.948-.004L11.36 6H2.64L7.193 4z"/>
+                    </svg> Panier</a></li> <!-- Ajout du lien vers le panier -->
+                </ul>
+                    </nav>
+    </header>
+    <section class="featured-products">
+        <div>
+            <h1>Découvrez l'Élégance Intemporelle de Nos Bijoux</h1>
+        </div>
+            <div class="product">
+                <h2>Contactez-nous</h2>
+                <form action="traitement_contact.php" method="post">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required><br><br>
+        
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required><br><br>
+        
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="4" required></textarea><br><br>
+        
+                    <input type="submit" value="Envoyer">
+                </form>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2023 La Fine Joailler. Tous droits réservés Par SidiMKnt.</p>
+        </footer>
+        <script src="app.js"></script>
+        </body>
+        </html>
+        

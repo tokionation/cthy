@@ -1,0 +1,9 @@
+CREATE TABLE commandes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nom VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    produit VARCHAR(255) NOT NULL,
+    quantite INT NOT NULL,
+    adresse TEXT NOT NULL,
+    date_creation TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
